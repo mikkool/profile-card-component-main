@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 :root {
-    Dark cyan: hsl(185, 75%, 39%)
-    Very dark desaturated blue: hsl(229, 23%, 23%)
-    Dark grayish blue: hsl(227, 10%, 46%)
-    
-    ### Neutral
-    
-    Dark gray: hsl(0, 0%, 59%)
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue:hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 *,
@@ -19,4 +18,97 @@ html {
   font-size: 100%;
   color: var(--very-light-gray);
   font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position-x: -50%, bottom;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  max-height: 374px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.top-banner {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 140px;
+  min-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.profile {
+  width: 100%;
+  box-shadow: 0 0 5px var(--dark-grayish-blue);
+  border-radius: 1rem;
+}
+
+.profile-pic {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.name {
+  padding-top: 77px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.n {
+  margin-right: 0.8rem;
+}
+
+.address, .age {
+  text-align: center;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+.address {
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 2rem;
+  border-top: 1px solid var(--dark-gray);
+}
+
+.numbers {
+  font-weight: 700;
+}
+
+.text {
+  color: var(--dark-gray);
+  font-size: 10px;
+  letter-spacing: 2px;
 }
