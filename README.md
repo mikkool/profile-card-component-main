@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://quirky-bohr-98e5d4.netlify.app/]
-- Live Site URL: [https://quirky-bohr-98e5d4.netlify.app/]
+- Live Site URL: [https://determined-aryabhata-9352df.netlify.app/]
 
 ## My process
 
